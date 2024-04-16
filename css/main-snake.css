@@ -11,7 +11,9 @@ button:hover {
         cursor: url("pointyfingerbig.png"), auto;
       }
 
-
+select:hover {
+cursor: url("pointyfingerbig.png"), auto;
+      }
 
 
 body {
