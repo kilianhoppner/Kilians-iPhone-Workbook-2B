@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>Kilian's iPhone</title>
+<link rel="icon" type="text/css" href="favicon/memojiv2.png">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body style="background-color:rgb(58, 169, 255)";>
+
+
+
+<style>
+
+
+
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+    }
+    
+    .container img {
+      width: 100%;
+      height: auto;
+    }
+    
+   
+
+    .container .iPhone {
+
+    position: absolute;
+    top: 41.5%;
+    left: 49.2%;
+    width:310px;
+    height:auto;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+
+    
+    }
+
+
+
+    
+    .container .cameraapp {
+
+   position: absolute;
+   top: 31.12%;
+   left: 45.2%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   cursor: url("emojis/pointyfingerbig.png"), auto;
+   width:40px;
+
+  }
+
+
+  .container .spotifyapp {
+
+position: absolute;
+top: 31.12%;
+left: 48.35%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+cursor: url("emojis/speaker.png"), auto;
+width:35.7px;
+
+}
+
+
+.container .thesnakegame {
+
+position: absolute;
+top: 31.09%;
+left: 54.8%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+cursor: url("emojis/pointyfingerbig.png"), auto;
+width:35.8px;
+
+}
+
+
+.container .safariapp {
+
+position: absolute;
+top: 31.12%;
+left: 51.58%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+cursor: url("emojis/pointyfingerbig.png"), auto;
+width:35.6px;
+
+}
+
+
+.container .notesapp {
+
+position: absolute;
+top: 36.4%;
+left: 45.2%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+cursor: url("emojis/pointyfingerbig.png"), auto;
+width:35.6px;
+
+}
+
+
+
+.container .invisiblebox {
+
+position: absolute;
+top: 43.8%;
+left: 50.7%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+cursor: url("emojis/speaker.png"), auto;
+width:120px;
+height: 130px;
+border: 0px solid rgb(66, 255, 141);
+margin: 0;
+}
+
+.container .boxcamera {
+
+position: absolute;
+top: 31.17%;
+left: 45.2%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+cursor: url("emojis/pointyfingerbig.png"), auto;
+width:35.3px;
+height: 35.3px;
+border: 0px solid rgb(66, 255, 141);
+margin: 0;
+}
+
+.container .boxsafari {
+
+position: absolute;
+top: 31.09%;
+left: 51.58%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+cursor: url("emojis/pointyfingerbig.png"), auto;
+width:35.4px;
+height: 35.4px;
+border: 0px solid rgb(66, 255, 141);
+margin: 0;
+}
+
+.container .boxthesnakegame {
+
+position: absolute;
+top: 31.12%;
+left: 54.8%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+cursor: url("emojis/pointyfingerbig.png"), auto;
+width:35.4px;
+height: 35.4px;
+border: 0px solid rgb(66, 255, 141);
+margin: 0;
+}
+
+
+.container .boxnotes {
+
+position: absolute;
+top: 36.4%;
+left: 45.2%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+cursor: url("emojis/pointyfingerbig.png"), auto;
+width:35.4px;
+height: 35.4px;
+border: 0px solid rgb(66, 255, 141);
+margin: 0;
+}
+
+
+
+</style>
+
+
+
+
+
+<audio id="myAudio">
+     <source src="sound/workoutvolumelower.mp3">
+</audio>  
+
+
+
+
+<script>
+var myAudio = document.getElementById("myAudio");
+var isPlaying = false;
+
+function togglePlay() {
+  isPlaying ? myAudio.pause() : myAudio.play();
+};
+
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
+      </script> 
+
+
+
+
+
+
+
+
+<audio id="chihuahuabarking">
+  <source src="sound/chihuahuabarking.mp3">
+</audio>  
+
+
+
+<script>
+      function play() {
+        var audio = document.getElementById("chihuahuabarking");
+        audio.play();
+      }
+    </script>
+
+
+
+
+
+
+
+<div class="container">
+        <img src="gifclouds/cloudsnightcompressed.gif"; height="100%"; width="100%">
+        <img src="iphone/iphonechihuahua.png"; class="iPhone"> 
+        <img class="cameraapp"; src="appicons/camera/camera.png">
+        <img class="spotifyapp"onclick="togglePlay()" onclick="pauseAudio()"; src="appicons/spotify/spotifyapp.png">
+        <img class="thesnakegame"; src="appicons/thesnakegame/thesnakegame.png">
+        <img class="safariapp"; src="appicons/safari/safariapp.png">
+        <img class="notesapp"; src="appicons/notes/notes.png">
+        <div class="invisiblebox"; onclick="play()"></div>
+        <a href="thesnakegame.html"><div class="boxthesnakegame"></div></a>
+        <a href="pornhub.html"><div class="boxsafari"></div></a>
+        <a href="notes.html"><div class="boxnotes"></div></a>
+        <a href="camera.html"><div class="boxcamera"></div></a>
+</div>
+
+
+
+</body>
+
+
+</html>
