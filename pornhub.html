@@ -42,7 +42,7 @@
         left: 38.4%;
         width:1000px;
         height:557px;
-        cursor: url("emojis/eggplant.png"), auto;
+        cursor: url("emojis/eggplantbig.png"), auto;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%)
         }
@@ -69,20 +69,20 @@
         -ms-transform: translate(-50%, -50%)
         }
 
-        .container .boxplaybutton {
 
-        position: absolute;
-        position: absolute;
-        top: 44.3%;
-        left: 38.4%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        cursor: url("emojis/eggplantbig.png"), auto;
-        width:990px;
-        height:495px;
-        border: 0px solid rgb(66, 255, 141);
-        margin: 0;
-        }
+#myVideo::-webkit-media-controls-play-button,
+#myVideo::-webkit-media-controls-pause-button,
+#myVideo::-webkit-media-controls-volume-slider,
+#myVideo::-webkit-media-controls-mute-button,
+#myVideo::-webkit-media-controls-timeline,
+#myVideo::-webkit-media-controls-current-time-display,
+#myVideo::-webkit-media-controls-time-remaining-display,
+#myVideo::-webkit-media-controls-seek-back-button,
+#myVideo::-webkit-media-controls-seek-forward-button,
+#myVideo::-webkit-media-controls-fullscreen-button,
+#myVideo::-webkit-media-controls-overflow-button {
+cursor: url('emojis/eggplantbig.png'), auto !important;
+}
 
         </style>
 
@@ -93,20 +93,8 @@
     <video id="myVideo" class="PornAddiction" poster="pages/pornhub/thumbnail.png" controls > <source src="pages/pornhub/pornaddiction.mp4" type="video/mp4"></video>
     <img class="craigslist" src="pages/pornhub/craigslist.gif" onclick="play()">
     <img class="megaerection" src="pages/pornhub/megaerection.gif" onclick="playToggle()">
-    <div class="boxplaybutton" onclick="playVideo()"></div>
 
 
-
-    <script>
-      function playVideo() {
-        var video = document.getElementById("myVideo");
-        if (video.paused) {
-          video.play();
-        } else {
-          video.pause();
-        }
-      }
-      </script>
 
 <audio id="femalemoan">
   <source src="sound/femalemoan/femalemoancut.mp3">
